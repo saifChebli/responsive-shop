@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GMC-SHOP | Online Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <header class="site-header">
+        <a href="#" class="logo">GMC-SHOP</a>
+
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+    </header>
+
+    <main class="main-content">
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <h1 class="hero-heading">Shop Smarter with GMC-SHOP</h1>
+                <p class="hero-text">Discover quality electronics and accessories at prices that make sense, delivered fast
+                    to your door.</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">Explore products</a>
+                        <a href="#features" class="btn btn-secondary">Learn more</a>
+                    </div>
+            </div>
+            <div class="hero-image"><img src="images/hero-image.jpg" alt="Hero Image"></div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-heading">Why Choose Us</h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon">🚚</span>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-text">Free delivery on all orders over $50, no minimum tricks.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3 class="feature-title">Secure Payment</h3>
+                    <p class="feature-text">Your transactions are encrypted and fully protected.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">↩️</span>
+                    <h3 class="feature-title">Easy Returns</h3>
+                    <p class="feature-text">30-day hassle-free returns on every purchase.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">💬</span>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-text">Our team is here around the clock to help you out.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2 class="section-heading">Featured Products</h2>
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="image-container">
+                        <img class="product-image" src="images/image-1.jpg" alt="Black wireless over-ear headphones">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Audio</p>
+                        <h3 class="product-name">Wireless Over-Ear Headphones</h3>
+                        <p class="product-price">$59.99</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Add to cart</button>
+                        <button class="btn-favorite" aria-label="Add to favorites">♥</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+
+                        <img class="product-image" src="images/image-2.jpg" alt="Silver smartwatch with black strap">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Wearables</p>
+                        <h3 class="product-name">Smart Fitness Watch</h3>
+                        <p class="product-price">$89.99</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Add to cart</button>
+                        <button class="btn-favorite" aria-label="Add to favorites">♥</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+
+                        <img class="product-image" src="images/image-3.jpg" alt="Compact portable bluetooth speaker">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Audio</p>
+                        <h3 class="product-name">Portable Bluetooth Speaker</h3>
+                        <p class="product-price">$34.99</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Add to cart</button>
+                        <button class="btn-favorite" aria-label="Add to favorites">♥</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+
+                        <img class="product-image" src="images/image-4.jpg" alt="Ergonomic wireless computer mouse">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Accessories</p>
+                        <h3 class="product-name">Wireless Ergonomic Mouse</h3>
+                        <p class="product-price">$19.99</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Add to cart</button>
+                        <button class="btn-favorite" aria-label="Add to favorites">♥</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+
+                        <img class="product-image" src="images/image-5.jpg"
+                            alt="Slim laptop backpack with front pocket">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Bags</p>
+                        <h3 class="product-name">Slim Laptop Backpack</h3>
+                        <p class="product-price">$44.99</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Add to cart</button>
+                        <button class="btn-favorite" aria-label="Add to favorites">♥</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-info">
+                <h2 class="cta-heading">Ready to upgrade your everyday gear?</h2>
+                <p class="cta-text">Join thousands of happy customers shopping at GMC-SHOP today.</p>
+                <button class="btn btn-primary">Get started</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+
+            <div class="footer-column">
+                <h3 class="footer-heading">Shop</h3>
+                <ul class="footer-list">
+                    <li><a href="#products" class="footer-link">All Products</a></li>
+                    <li><a href="#" class="footer-link">New Arrivals</a></li>
+                    <li><a href="#" class="footer-link">Best Sellers</a></li>
+                    <li><a href="#" class="footer-link">Deals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-heading">Help</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Shipping Info</a></li>
+                    <li><a href="#" class="footer-link">Returns</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy; 2026 GMC-SHOP. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
