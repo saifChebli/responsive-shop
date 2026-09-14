@@ -48,6 +48,10 @@ li {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
 }
 
 .logo {
@@ -205,9 +209,12 @@ li {
     background: #ffffff;
     border: 1px solid #eeeeee;
     border-radius: 8px;
+     
+    /* create reference point for absolute positioning */
+    position: relative;
 
     transition: transform 0.2s ease , box-shadow 0.2s ease;
-
+    animation: cardsFades 1.7s ease both;
 }
 
 .product-card:hover {
@@ -257,6 +264,9 @@ li {
 }
 
 .btn-add-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     background: #111111;
     color: #ffffff;
     font-size: 20px;
@@ -265,6 +275,9 @@ li {
 }
 
 .btn-favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -288,6 +301,48 @@ li {
     border-radius: 20px;
     padding: 55px;
 }
+
+.cta-info .btn-primary {
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15) translateY(8px);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes cardsFades {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.support-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: none;
+}
+
 
 .site-footer {
     padding-top: 70px;
